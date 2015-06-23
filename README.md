@@ -7,12 +7,12 @@ this is a windows application<br />
 
 #<h3> What tools in this  program ? </h3>
  1- Reflector </br>
- 2- Xsser <br>
- 3- Digger</br>
- 4- Coder</br>
- 5-Repeater</br>
- 6-Collector
- 7-Watcher
+ 2- Xsser    for Cross site scripting  <br>
+ 3- Digger   for manual pentesting</br>
+ 4- Coder    for encoding and decoding</br>
+ 5-Repeater  for sending customized HTTP requests</br>
+ 6-Collector For gathering informaion 
+ 7-Watcher   Proxy-server
  
 <br />
 
@@ -28,7 +28,7 @@ DropBox
 </a>
 
 
-<32>Vulnerabilities Can detect</h3>
+<h3>Vulnerabilities Can detect</h3>
 -Cross site scripting    
 -Header misconfiguration </br>
      -Sql injection
