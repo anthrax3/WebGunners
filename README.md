@@ -6,7 +6,7 @@ Web Application Scanner
 this is a windows application<br /> 
 
 #<h3> What tools in this  program ? </h3>
- 1- Reflector </br>
+ 1- Reflector  For detecting reflected headers</br>
  2- Xsser    for Cross site scripting  <br>
  3- Digger   for manual pentesting</br>
  4- Coder    for encoding and decoding</br>
