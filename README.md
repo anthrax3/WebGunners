@@ -1,11 +1,11 @@
 # Web Gunners <br />
 Web Application Scanner 
 
-<h1>This project is under developing</h1>
-#<h2> Environment</h2>
+<font color="red"><h3>This project is under developing</h1>
+#<h3> Environment</h3>
 this is a windows application<br /> 
 
-#<h2> What tools in this  program ? </h2>
+#<h3> What tools in this  program ? </h3>
  1- Reflector </br>
  2- Xsser <br>
  3- Digger</br>
@@ -15,28 +15,31 @@ this is a windows application<br />
  7-Watcher
  
 <br />
-==============================================<br />
 
-<h2>Download Live updated Version</h2>
+
+#<h3> More </h3>
+8-It can listen to port and setting up as a proxy server</br>
+9- View all http requests and responses sent by tools mentioned before
+
+<h3>Download Live updated Version</h3>
 This link provide you with each update of the program 
 <a href='https://www.dropbox.com/s/dpk5j1izdxajqag/Web%20Gunners%20Beta.exe?dl=0' >
 DropBox
 </a>
 
 
-<h2>Vulnerabilities Can detect</h2>
+<32>Vulnerabilities Can detect</h3>
 -Cross site scripting    
 -Header misconfiguration </br>
      -Sql injection
 <br /> 
-<h2> Appearance </h2>
+<h3> Appearance </h3>
 Here is a screenshot
 <br /> 
 
 
 Main<img src='http://i.imgur.com/XiH1jQx.png' /></br>
-Repeater<img src='http://i.imgur.com/snyiDkF.png' /></br>
-Digger<img src='http://i.imgur.com/YJO99qE.png' /></br>
+Repeater<img src='http://i.imgur.com/snyiDkF.png' /></br> 
 Reflector<img src='http://i.imgur.com/lBrZFkY.png' /></br>
 Digger<img src='http://i.imgur.com/WjfiXWs.png' /></br>
 Collector<img src='http://i.imgur.com/Yjsvvcg.png' /></br>
