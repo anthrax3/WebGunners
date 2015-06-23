@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: text/plain
+
+GET http://ask.fm/ HTTP/1.1
+Host: ask.fm
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: language_id=1; __utma=1.1829112866.1433812683.1434488301.1434500418.4; __utmz=1.1433812683.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __qca=P0-977111634-1433812683205; inbox_notice=1433812936; rbox_type=3; rbox_toggle=1
+Connection: keep-alive
+

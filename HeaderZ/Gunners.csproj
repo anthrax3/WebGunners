@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7171DB30-E162-4BA9-A297-A39C9BD52D33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web_Gunners</RootNamespace>
+    <AssemblyName>Web Gunners Beta</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>braw-bro-man-03.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>C:\Users\YasserGersy\Downloads\Mezura-master\Mezura-master\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmAttackPrefix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmAttackPrefix.Designer.cs">
+      <DependentUpon>FrmAttackPrefix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmAuthGetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmAuthGetter.Designer.cs">
+      <DependentUpon>FrmAuthGetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmPayloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmPayloader.Designer.cs">
+      <DependentUpon>FrmPayloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmScriptBoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmScriptBoy.Designer.cs">
+      <DependentUpon>FrmScriptBoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedVars.cs" />
+    <Compile Include="FrmWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarning.Designer.cs">
+      <DependentUpon>FrmWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCP\FrmInterCeptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCP\FrmInterCeptor.Designer.cs">
+      <DependentUpon>FrmInterCeptor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmParser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmParser.Designer.cs">
+      <DependentUpon>FrmParser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmDigger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmDigger.Designer.cs">
+      <DependentUpon>FrmDigger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmWebBrowser.Designer.cs">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmCollector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmCollector.Designer.cs">
+      <DependentUpon>FrmCollector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmMRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmMRCode.Designer.cs">
+      <DependentUpon>FrmMRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmHostPortIInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmHostPortIInput.Designer.cs">
+      <DependentUpon>FrmHostPortIInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRepeater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmRepeater.Designer.cs">
+      <DependentUpon>FrmRepeater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmXsser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FrmXsser.Designer.cs">
+      <DependentUpon>FrmXsser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\JersiProxiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\JersiProxiFrm.Designer.cs">
+      <DependentUpon>JersiProxiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisterCoder.cs" />
+    <Compile Include="ProxySwitcher.cs" />
+    <Compile Include="ProxySwitcher.designer.cs">
+      <DependentUpon>ProxySwitcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAttackS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAttackS.Designer.cs">
+      <DependentUpon>FrmAttackS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\FormReflector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\FormReflector.Designer.cs">
+      <DependentUpon>FormReflector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inputs\Frm.MultiHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\MultiHSFrm.Designer.cs">
+      <DependentUpon>Frm.MultiHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inputs\FormUserAgentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\FormUserAgentSelector.Designer.cs">
+      <DependentUpon>FormUserAgentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Inputs\FrmSingle_Header_SelectorFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inputs\FrmSingle_Header_SelectorFrm.Designer.cs">
+      <DependentUpon>FrmSingle_Header_SelectorFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="TCP\HttpListener.cs" />
+    <Compile Include="TCP\Interfaces.cs" />
+    <Compile Include="TCP\RequestFilters\NullFilter.cs" />
+    <Compile Include="TCP\RequestHandlers\TransparentProxy.cs" />
+    <Compile Include="TCP\Service.cs" />
+    <Compile Include="WebAttacker.cs" />
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inputs\Frm.MultiHS.resx">
+      <DependentUpon>Frm.MultiHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inputs\FrmAttackPrefix.resx">
+      <DependentUpon>FrmAttackPrefix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inputs\FrmAuthGetter.resx">
+      <DependentUpon>FrmAuthGetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inputs\FrmPayloader.resx">
+      <DependentUpon>FrmPayloader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmScriptBoy.resx">
+      <DependentUpon>FrmScriptBoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarning.resx">
+      <DependentUpon>FrmWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCP\FrmInterCeptor.resx">
+      <DependentUpon>FrmInterCeptor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmParser.resx">
+      <DependentUpon>FrmParser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmDigger.resx">
+      <DependentUpon>FrmDigger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmWebBrowser.resx">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmCollector.resx">
+      <DependentUpon>FrmCollector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmMRCode.resx">
+      <DependentUpon>FrmMRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inputs\FrmHostPortIInput.resx">
+      <DependentUpon>FrmHostPortIInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmRepeater.resx">
+      <DependentUpon>FrmRepeater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FrmXsser.resx">
+      <DependentUpon>FrmXsser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\JersiProxiFrm.resx">
+      <DependentUpon>JersiProxiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProxySwitcher.resx">
+      <DependentUpon>ProxySwitcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAttackS.resx">
+      <DependentUpon>FrmAttackS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\FormReflector.resx">
+      <DependentUpon>FormReflector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inputs\FormUserAgentSelector.resx">
+      <DependentUpon>FormUserAgentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Inputs\FrmSingle_Header_SelectorFrm.resx">
+      <DependentUpon>FrmSingle_Header_SelectorFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hot-Girls-Black-and-White-HD-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snfr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="braw-bro-man-03.ico" />
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
