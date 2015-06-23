@@ -1,7 +1,7 @@
 # Web Gunners <br />
 Web Application Scanner 
 
-<h3><font color="red">This project is under developing</fonr></h1>
+<h3><font color="red">This project is under developing and all versions available are Beta</fonr></h1>
 #<h3> Environment</h3>
 this is a windows application<br /> 
 
